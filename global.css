@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+h3 {
+    padding: 0px 1em;
+    color: #84C1CD;
+}
+
+img.blockimg {
+    display: block;
+}
+p.arrow {
+    color: white;
+    font-weight: bold;
+}
+
+#nav_dummy_container {
+    margin: 0px;
+    padding: 0px;
+    background-color: #373C3F;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#nav_dummy_title {
+    margin: 0px;
+    padding: 0px 1em;
+    flex-grow: 1;
+}
+#nav_dummy_button {
+    margin: 0px;
+    padding: 0px 1em;
+    background-color: #202529;
+    font-weight: bold;
+}
+
+#nav_menu {
+    margin: 0px;
+    padding: 1em;
+    background-color: #373C3F;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.nav_item {
+    margin: 0px;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-size: small;
+}
+.nav_item:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+#crap_container {
+    margin: 0px;
+    padding: 2em 1em;
+    display: flex;
+    background-color: #11ABBF;
+    font-size: small;
+}
+#crap_block {
+    display: flex;
+    flex-direction: column;
+}
+#crap_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#crap_text {
+    color: white;
+    font-size: large;
+}
+#crap_site {
+    color: silver;
+    flex-grow: 1;
+}
+#crap_arrow {
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+#morecrap_container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    background-color: #27212C;
+}
+#morecrap_text {
+    padding: 1em 2em;
+    color: #9B8AA9;
+    flex-grow: 1;
+}
+#morecrap_arrow {
+    padding: 1em 2em;
+    background-color: #BC1383;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+#somestuff_container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+#somestuff_arrow_box {
+    background-color: #5B0FA1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#somestuff_arrow {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#text_container {
+    margin: 0px;
+    padding: 2em;
+    background-color: #EBEBEB;
+}
+#text_block {
+    margin: 1em 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+.text_column {
+    margin: 0px 1em;
+}
+.text_text {
+    color: #999999;
+}
+
+@media only screen and (max-width: 639px) {
+    #nav_dummy_container { display: flex; }
+    #nav_dummy_title { font-size: small; }
+    #nav_menu { display: none; }
+    #crap_text { font-size: large; }
+    #crap_site { font-size: x-small; }
+    #morecrap_text { font-size: small; }
+    #morecrap_arrow { font-size: small; }
+    #somestuff_container { flex-direction: column; }
+    #somestuff_arrow_box { padding-bottom: 100%; }
+    #somestuff_arrow { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
+    #text_block { font-size: medium; }
+    .mini { display: none; }
+}
+@media only screen and (min-width: 640px) and (max-width: 959px) {
+    #nav_dummy_container { display: flex; }
+    #nav_dummy_title { font-size: medium; }
+    #nav_menu { display: none; }
+    #crap_text { font-size: x-large; }
+    #crap_site { font-size: small; }
+    #morecrap_text { font-size: medium; }
+    #morecrap_arrow { font-size: medium; }
+    #somestuff_container { flex-direction: column; }
+    #somestuff_arrow_box { padding-bottom: 100%; }
+    #somestuff_arrow { position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; }
+    #text_block { font-size: large; }
+    .mini { display: none; }
+}
+@media only screen and (min-width: 960px) {
+    #nav_dummy_container { display: none; }
+    #nav_dummy_title { font-size: small; }
+    #nav_menu { display: flex; }
+    #crap_text { font-size: xx-large; }
+    #crap_site { font-size: medium; }
+    #morecrap_text { font-size: large; }
+    #morecrap_arrow { font-size: large; }
+    #somestuff_container { flex-direction: row; justify-content: stretch; }
+    #somestuff_arrow_box { padding-bottom: 0px; flex-grow: 1; min-width: 33%; }
+    #somestuff_arrow { position: relative; }
+    img.blockimg { max-width: 33%; }
+    #text_block { font-size: x-large; }
+    .mini { display: block; }
+}
+@media only screen and (min-width: 1024px) {
+    #morecrap_text { font-size: x-large; }
+    #morecrap_arrow { font-size: x-large; }
+    #text_block { font-size: xx-large; }
+}
